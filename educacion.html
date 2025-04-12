@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Educación Financiera - Links Financial</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/estilos.css" />
+  </head>
+  <body class="bg-light">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">Links Financial</a>
+        <div class="collapse navbar-collapse">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="portafolio.html">Portafolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="mercado.html">Mercado</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Contenido Educativo -->
+    <div class="container py-5">
+      <h2 class="text-primary text-center mb-4">Educación Financiera</h2>
+
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body">
+              <h5 class="card-title text-success">¿Qué es una acción?</h5>
+              <p class="card-text">
+                Una acción es una parte del capital de una empresa. Al comprar
+                acciones, te conviertes en propietario parcial y puedes obtener
+                beneficios si la empresa crece.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body">
+              <h5 class="card-title text-warning">¿Por qué invertir en oro?</h5>
+              <p class="card-text">
+                El oro es un activo refugio: su valor se mantiene en épocas de
+                crisis. Es ideal para diversificar tu portafolio y proteger tu
+                inversión.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body">
+              <h5 class="card-title text-info">Simulación educativa</h5>
+              <p class="card-text">
+                Experimenta una inversión simulada con resultados hipotéticos.
+                Aprende cómo tus decisiones pueden impactar tu portafolio sin
+                riesgo real.
+              </p>
+              <a href="mercado.html" class="btn btn-outline-primary mt-2"
+                >Probar ahora</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="text-center mt-5">
+        <a href="index.html" class="btn btn-outline-secondary"
+          >Volver al Inicio</a
+        >
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Toasts -->
+    <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 9999">
+      <div
+        id="toastAlerta"
+        class="toast align-items-center text-white bg-primary border-0"
+        role="alert"
+      >
+        <div class="d-flex">
+          <div class="toast-body" id="toastMensaje">Notificación</div>
+          <button
+            type="button"
+            class="btn-close btn-close-white me-2 m-auto"
+            data-bs-dismiss="toast"
+          ></button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

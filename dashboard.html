@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard | Links Financial</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <!-- Navbar principal -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary px-4">
+      <a class="navbar-brand" href="#">Links Financial</a>
+      <div class="ms-auto text-white">
+        Bienvenido, <span id="nombreUsuario">Usuario</span> |
+        <a href="login.html" class="text-white text-decoration-underline"
+          >Cerrar sesión</a
+        >
+      </div>
+    </nav>
+
+    <div class="container-fluid">
+      <div class="row">
+        <!-- Menú lateral -->
+        <aside class="col-md-2 bg-light vh-100 p-3">
+          <ul class="nav flex-column">
+            <li class="nav-item">
+              <a class="nav-link active" href="dashboard.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="portafolio.html">Mi Portafolio</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="educacion.html">Educación</a>
+            </li>
+          </ul>
+        </aside>
+
+        <!-- Contenido principal -->
+        <main class="col-md-10 p-4">
+          <h2 class="mb-4">Panel de Control</h2>
+
+          <!-- Resumen Financiero -->
+          <div class="row mb-4">
+            <div class="col-md-4">
+              <div class="card text-bg-success">
+                <div class="card-body">
+                  <h5 class="card-title">Balance Disponible</h5>
+                  <p class="card-text fs-4" id="balance">$10,000</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card text-bg-info">
+                <div class="card-body">
+                  <h5 class="card-title">Valor de Portafolio</h5>
+                  <p class="card-text fs-4" id="valor-portafolio">$12,500</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card text-bg-warning">
+                <div class="card-body">
+                  <h5 class="card-title">Ganancia/Pérdida</h5>
+                  <p class="card-text fs-4" id="ganancia">+$2,500</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Activos disponibles -->
+          <h3 class="mt-4">Activos Disponibles</h3>
+          <div class="row mb-4" id="activos">
+            <!-- Los activos se cargarán dinámicamente con JS -->
+          </div>
+
+          <!-- Gráfico de rendimiento -->
+          <h3>Rendimiento del Portafolio</h3>
+          <canvas id="graficoPortafolio" height="100"></canvas>
+
+          <!-- Historial de transacciones -->
+          <h3 class="mt-5">Historial de Transacciones</h3>
+          <table class="table table-striped">
+            <thead>
+              <tr>
+                <th>Fecha</th>
+                <th>Tipo</th>
+                <th>Activo</th>
+                <th>Monto</th>
+              </tr>
+            </thead>
+            <tbody id="historial">
+              <!-- Transacciones cargadas con JS -->
+            </tbody>
+          </table>
+        </main>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="js/dashboard.js"></script>
+  </body>
+</html>

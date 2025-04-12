@@ -1,0 +1,119 @@
+/* --------- GENERAL --------- */
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+  background-color: #f8f9fa;
+}
+
+/* --------- NAVBAR --------- */
+.navbar-brand {
+  font-weight: bold;
+  color: #f5c542 !important;
+}
+
+.navbar-dark .nav-link {
+  color: #ddd;
+  transition: 0.3s;
+}
+
+.navbar-dark .nav-link:hover,
+.navbar-dark .nav-link.active {
+  color: #f5c542;
+}
+
+/* --------- HERO / ENCABEZADOS --------- */
+header {
+  background: linear-gradient(135deg, #f0f4f8, #ffffff);
+  padding: 4rem 0;
+}
+
+header h1 {
+  color: #0d6efd;
+}
+
+.lead {
+  font-size: 1.2rem;
+}
+
+/* --------- BOTONES --------- */
+.btn-primary {
+  background-color: #0d6efd;
+  border-color: #0d6efd;
+}
+
+.btn-primary:hover {
+  background-color: #084dbf;
+  border-color: #084dbf;
+}
+
+.btn-outline-primary:hover {
+  background-color: #0d6efd;
+  color: #fff;
+}
+
+.btn-outline-warning {
+  border-color: #f5c542;
+  color: #f5c542;
+}
+
+.btn-outline-warning:hover {
+  background-color: #f5c542;
+  color: #000;
+}
+
+/* --------- CARDS --------- */
+.card {
+  border-radius: 0.75rem;
+  border: none;
+  transition: box-shadow 0.3s ease;
+}
+
+.card:hover {
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+}
+
+.card-title {
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+}
+
+.card-text {
+  font-size: 0.95rem;
+  color: #555;
+}
+
+/* --------- FORMULARIOS --------- */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+select {
+  border-radius: 0.5rem;
+  padding: 0.6rem;
+  border: 1px solid #ccc;
+}
+
+input:focus {
+  border-color: #0d6efd;
+  outline: none;
+  box-shadow: 0 0 0 0.2rem rgba(13, 110, 253, 0.25);
+}
+
+/* --------- TABLAS --------- */
+.table th {
+  background-color: #0d6efd;
+  color: white;
+}
+
+.table td {
+  vertical-align: middle;
+}
+
+/* --------- FOOTER --------- */
+footer {
+  background-color: #121212;
+  color: #bbb;
+  font-size: 0.9rem;
+  padding: 1rem 0;
+  text-align: center;
+}
